@@ -1,0 +1,183 @@
+body{
+  background-color: black;
+ 
+}
+.blur{
+  filter: blur(3px);
+}
+.hide{
+  display: none !important;
+}
+#cardcontainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card{
+  width: 280px;
+  height: 300px;
+  margin: 50px;
+  position:relative;
+  background-color: white;
+  border: 2px solid brown;
+  border-radius:15px;
+}
+
+h3{
+  text-align: center;
+  color:rgb(196, 28, 28);
+  font-size: 40px;
+}
+input{
+  margin-left: 80px;
+  width: 250px;
+  height: 30px;
+}
+.box{
+  /* border:2px solid black; */
+  margin-left:250px ;
+  color: white;
+  font-size: xx-large;
+}
+#addtaskpopup{
+  border: 1px solid #EDEDED ;
+    width: 400px;
+    height: 250px;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+   position: absolute;
+   top: 184px;
+   left: 250px;
+   opacity: 1;
+   background-color: white;
+}
+#list{
+  font-size: 45px;
+  color: white;
+}
+.back{
+  width: 100px;
+}
+#task{
+  color: white;
+   margin-left:250px ;
+   font-size: 55px;
+   font-weight: bolder;
+}
+
+#additem{
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 34px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    top:10px;
+    left:590px;
+    outline: none;
+    display: inline-block;
+   /* border: 2px solid #212529; */
+    background: black; 
+}
+button{
+     width: 70px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: rgb(196, 28, 28);
+    border-radius: 15px;
+    margin-left: 50px;
+}
+
+#addItemPopup{
+  border: 1px solid #EDEDED ;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+   position: absolute;
+   top: 184px;
+   left: 250px;
+   opacity: 1;
+   background-color: white;
+}
+.add{
+  width: 110px;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+#backbtn{
+  margin-left: 300px;
+}
+
+#button{
+  width: 110px;
+  margin-left: 50px;
+}
+#singleCard{
+  position: absolute;
+  left: 380px;
+}
+.button{
+  width: 110px;
+}
+@media screen and (max-width:500px) and (min-width:250px) {
+  #cardcontainer{
+   flex-direction: column;
+  }
+  #task{
+     margin-left:0px ;
+     font-size: 38px;  
+  }
+  #list{
+    font-size: 25px;
+  }
+  .box{
+    margin-left: 0px;
+    font-size: 25px;
+  }
+  #additem{
+    left:45px;
+    width:170px;
+    top:-10px;
+    font-size: 24px;
+  }
+  #addtaskpopup{
+     left: 20px;
+    width: 300px;
+      
+  }
+  #backbtn{
+    margin-left: 4px;
+  }
+  .card{
+    margin-left: 20px;
+  }
+  #addItemPopup{
+    left: 23px;
+    width: 300px;
+  }
+  input{
+    margin-left: 20px;
+  }
+  button{
+    margin-top:20px;
+    width: 80px;
+  }
+  #singleCard{
+    left: 4px;
+  }
+  #button{
+    width: 80px;
+  }
+  .button{
+    width: 80px;
+  }
+  .add{
+     width:80px;
+     margin-left: 40px;    
+  }
+  
+}
